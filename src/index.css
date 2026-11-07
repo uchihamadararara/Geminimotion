@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'InterLocal';
+  src: url('/fonts/inter-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InterLocal';
+  src: url('/fonts/inter-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'InterLocal';
+  src: url('/fonts/inter-900.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JBMLocal';
+  src: url('/fonts/jbm-500.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'JBMLocal';
+  src: url('/fonts/jbm-700.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@layer base {
+  :root {
+    --font-display: 'Bricolage Grotesque', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090A0F;
+    color: #F8FAFC;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Blueprint grid background utility */
+.bg-blueprint-grid {
+  background-color: #08090D;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 85, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 85, 0, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px, 24px 24px, 120px 120px, 120px 120px;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #090A0F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1E2230;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #33394F;
+}

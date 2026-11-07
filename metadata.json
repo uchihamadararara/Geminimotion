@@ -1,0 +1,6 @@
+{
+  "name": "KineticCode Studio",
+  "description": "Procedural 9:16 vertical motion graphics director powered by Gemini that writes mathematical animations, laser blueprint hooks, kinetic typography, 3D UI walkthroughs, and paper form cutaways.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
